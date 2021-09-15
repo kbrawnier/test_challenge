@@ -37,6 +37,7 @@ html, body{
 #contact {
     color: var(--gold);
     text-decoration: none;
+    font-weight: 900;
 }
 
 .section{
@@ -44,14 +45,23 @@ html, body{
     display: flex;
     gap: 15px;
     flex-direction: column;
-    width: 80%;
 }
 
 .heading {
     font-weight: 900;
+    align-self: center;
 }
 
 .talkie, .rabbit, .shield{
     background-color: white;
+    margin: auto;
+    width: 80%;
+    align-self: center;
     display: flex;
+    flex-direction: column;
+}
+
+.talkie img, .rabbit img, .shield img{
+    margin: auto;
+    align-self: center;
 }
