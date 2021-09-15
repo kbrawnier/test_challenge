@@ -1,0 +1,53 @@
+html, body{
+    --darkGrey: #222222;
+    --midGrey: #858585;
+    --lightGrey: #F5F5F5;
+    --gold: #DEBF79;
+    --red: #800000;
+
+    background-color: var(--darkGrey);
+
+}
+
+#logo {
+ width: 50%;
+ height: auto;
+ align-self: center;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template:
+        [row1-start] "header" 90% [row1-end]
+        [row2-start] "talkie" 90% [row2-end]
+        [row3-start] "rabbit" 90% [row3-end]
+        [row4-start] "shield" 90% [row4-end]
+        [row5-start] "heading" 90% [row5-end]
+        / auto;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    grid-area: header;
+    height: 100px;
+}
+
+#contact {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+.talkie {
+    grid-area: talkie;
+}
+
+.rabbit {
+    grid-area: rabbit;
+}
+
+.shield {
+    grid-area: shield;
+}
+
