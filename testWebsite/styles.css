@@ -6,7 +6,9 @@ html, body{
     --red: #800000;
 
     background-color: var(--darkGrey);
-
+    font-family: 'Poppins', sans-serifs;
+    margin: auto;
+    font-weight: 500;
 }
 
 #logo {
@@ -19,10 +21,8 @@ html, body{
     display: grid;
     grid-template:
         [row1-start] "header" 90% [row1-end]
-        [row2-start] "talkie" 90% [row2-end]
-        [row3-start] "rabbit" 90% [row3-end]
-        [row4-start] "shield" 90% [row4-end]
-        [row5-start] "heading" 90% [row5-end]
+        [row2-start] "section" 90% [row2-end]
+        [row3-start] "footer" 90% [row3-end]
         / auto;
 
 }
@@ -39,15 +39,19 @@ html, body{
     text-decoration: none;
 }
 
-.talkie {
-    grid-area: talkie;
+.section{
+    grid-area: section;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    width: 80%;
 }
 
-.rabbit {
-    grid-area: rabbit;
+.heading {
+    font-weight: 900;
 }
 
-.shield {
-    grid-area: shield;
+.talkie, .rabbit, .shield{
+    background-color: white;
+    display: flex;
 }
-
