@@ -20,9 +20,9 @@ html, body{
 .gridContainer {
     display: grid;
     grid-template:
-        [row1-start] "header" 90% [row1-end]
-        [row2-start] "section" 90% [row2-end]
-        [row3-start] "footer" 90% [row3-end]
+        [row1-start] "header" [row1-end]
+        [row2-start] "section" [row2-end]
+        [row3-start] "footer" [row3-end]
         / auto;
 
 }
@@ -55,14 +55,20 @@ html, body{
 .talkie, .rabbit, .shield{
     background-color: white;
     margin: auto;
-    width: 80%;
-    align-self: center;
+    width: 98%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    height: 50vh;
+    border-radius: 4px;
 }
 
 .talkie img, .rabbit img, .shield img{
-    margin: auto;
+    margin-top: 3vh;
     align-self: center;
+}
+
+.text{
+    color: var(--midGrey);
+    font-size: .875em;
 }
