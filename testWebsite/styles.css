@@ -59,6 +59,7 @@ html, body{
     align-self: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .talkie img, .rabbit img, .shield img{
