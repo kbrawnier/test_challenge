@@ -50,6 +50,7 @@ html, body{
 .heading {
     font-weight: 900;
     align-self: center;
+    margin: 0;
 }
 
 .talkie, .rabbit, .shield{
@@ -68,12 +69,25 @@ html, body{
     align-self: center;
 }
 
+.talkie .learnMore{
+    margin-bottom: 40px;
+}
+
+.rabbit .learnMore{
+    margin-bottom: 32px;
+}
+
+.textSection{
+    width: 80%;
+    align-self: center;
+}
+
 .text{
     color: var(--midGrey);
-    font-size: .875em;
-    width: 75%;
+    font-size: 14px;
     word-spacing: .12em;
     align-self: center;
+    line-height: 2em;
 }
 
 .learnMore {
