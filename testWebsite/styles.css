@@ -51,12 +51,14 @@ html, body{
     font-weight: 900;
     align-self: center;
     margin: 0;
+    font-size: 2.2em;
+    margin-bottom: 20px;
 }
 
 .talkie, .rabbit, .shield{
     background-color: white;
     margin: auto;
-    width: 98%;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -78,18 +80,20 @@ html, body{
 }
 
 .textSection{
-    width: 80%;
-    align-self: center;
+    width: 75%;
+    margin-left: 60px;
 }
 
 .text{
     color: var(--midGrey);
     font-size: 14px;
-    word-spacing: .12em;
-    align-self: center;
     line-height: 2em;
 }
 
 .learnMore {
     margin-bottom: 37px;
+}
+
+.extraSpace{
+    word-spacing: .15em;
 }
