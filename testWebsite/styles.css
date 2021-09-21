@@ -38,21 +38,24 @@ html, body{
     color: var(--gold);
     text-decoration: none;
     font-weight: 900;
+    align-self: center;
 }
 
 .section{
     grid-area: section;
     display: flex;
-    gap: 15px;
+    gap: 8px;
     flex-direction: column;
 }
 
 .heading {
     font-weight: 900;
     align-self: center;
-    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 10px;
     font-size: 2.2em;
     margin-bottom: 20px;
+    color: var(--darkGrey);
 }
 
 .talkie, .rabbit, .shield{
@@ -66,8 +69,18 @@ html, body{
     border-radius: 4px;
 }
 
+.talkie img{
+    margin-top: 20px;
+}
+
+.rabbit img{
+    margin-top: 35px;
+}
+
+.shield img{
+    margin-top: 28px;
+}
 .talkie img, .rabbit img, .shield img{
-    margin-top: 3vh;
     align-self: center;
 }
 
@@ -88,10 +101,18 @@ html, body{
     color: var(--midGrey);
     font-size: 14px;
     line-height: 2em;
+    margin-top: 20px;
 }
 
 .learnMore {
-    margin-bottom: 37px;
+    border: none;
+    color: white;
+    background-color: var(--gold);
+    align-self: center;
+    margin-top: 7px;
+    height: 45px;
+    width: 130px;
+    font-size: .9em;
 }
 
 .extraSpace{
