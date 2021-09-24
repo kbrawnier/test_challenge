@@ -1,17 +1,20 @@
 var isClicked = false;
-var arrayOutput = document.getElementById('arrayOutput');
-var modal = document.getElementById('modal');
-const array1 = ["Matt Johnson", "Bart Paden", "Ryan Doss", "Jared Malcolm"];
-const array2 = ["Matt Johnson", "Bart Paden", "Jordan Heigle", "Tyler Viles"];
+
+function arrayString(){
+    let array1 = ["Matt Johnson", "Bart Paden", "Ryan Doss", "Jared Malcolm"];
+    let array2 = ["Matt Johnson", "Bart Paden", "Jordan Heigle", "Tyler Viles"];
+    array2 = array2.filter(val => !array1.includes(val));
+    let newArray = array1.concat(array2);
+    return newArray.join(", ");
+};
 
 function arrayFunction(){
-    console.log('clicked');
     if(isClicked == false){
-    
+        document.getElementById('arrayOutput').textContent = arrayString();
         isClicked = true;
-    } else{document.getElementById('modal').style.display = 'flex'} 
-    };
+    } else{document.getElementById('modal').style.display = 'block'} 
+};
 
-    function arrayOutput(array1,array2){
-        const newArray = array1.concat(array2)
-    }
+function closeModal() {
+    document.getElementById('modal').style.display = "none";
+  }

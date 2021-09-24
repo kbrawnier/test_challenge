@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-    <script src="arrayFile.js"></script>
     <title>MidWestern</title>
 
 </head>
@@ -69,11 +68,13 @@
         <h1 class="footerHeading">
             <span>Heading</span> One
         </h1>
-            <button onclick="arrayFunction()" id="arrayOutput">Click here to see the output of the array function.</button>
+            <span onclick="arrayFunction()" id="arraySpan">Click here to see the output of the array function.</span>
+            <div id="arrayOutput"></div>
     </div>
     <div id="modal">
-        <span class="close">&times;</span>
-        You've already selected the link!
+        You've already clicked this link!
+        <span id="close" onclick="closeModal()">&times;</span>
     </div>
 </body>
+<script src="arrayFile.js"></script>
 </html>
