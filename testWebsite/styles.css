@@ -123,6 +123,8 @@ html, body{
     width: 80%;
     Margin: auto;
     margin-top: 30px;
+    color: white;
+    margin-bottom: 30px;
 
 }
 
@@ -130,6 +132,7 @@ html, body{
     font-size: 3em;
     color: white;
     margin: auto;
+    margin-bottom: 25px;
 }
 
 .footerHeading span{
@@ -141,22 +144,39 @@ html, body{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-#arraySpan{
-    color: white;
+
+
+.modalContent{
+    display: grid;
+    grid-template: [row1-start] "text close" 100%[row1-end] / auto auto;
+    background-color: white;
+    align-self: center;
+    width: 95%;
+    justify-content: center;
+    margin: auto;
+    gap: 15px;
 }
 
-#arrayOutput{
-    color: white;
+.modalText{
+    grid-area: text;
+    align-self: center;
+}
+
+#arraySpan {
+    color: var(--gold);
+}
+
+#arraySpan:hover{
+    color: var(--midGrey);
+    cursor: pointer;
 }
 
 #close {
@@ -164,6 +184,9 @@ html, body{
     float: right;
     font-size: 28px;
     font-weight: bold;
+    grid-area: close;
+    width: max-content;
+    align-self: center;
   }
   
   #close:hover,

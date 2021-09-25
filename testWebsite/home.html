@@ -68,12 +68,14 @@
         <h1 class="footerHeading">
             <span>Heading</span> One
         </h1>
-            <span onclick="arrayFunction()" id="arraySpan">Click here to see the output of the array function.</span>
+            <span onclick="arrayFunction()" id="arraySpan">Click here</span> to see the output of the array function.
             <div id="arrayOutput"></div>
     </div>
     <div id="modal">
-        You've already clicked this link!
-        <span id="close" onclick="closeModal()">&times;</span>
+        <div class="modalContent">
+            <div class="modalText">You've already clicked this link!</div>
+            <span id="close" onclick="closeModal()">&times;</span>
+        </div>
     </div>
 </body>
 <script src="arrayFile.js"></script>

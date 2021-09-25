@@ -12,7 +12,7 @@ function arrayFunction(){
     if(isClicked == false){
         document.getElementById('arrayOutput').textContent = arrayString();
         isClicked = true;
-    } else{document.getElementById('modal').style.display = 'block'} 
+    } else{document.getElementById('modal').style.display = 'flex'} 
 };
 
 function closeModal() {
